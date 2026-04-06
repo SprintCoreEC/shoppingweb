@@ -1,5 +1,5 @@
 import { HiPlus } from "react-icons/hi";
-import heroImg from "../assets/bg2.png";
+import heroImg from "../assets/hero.png";
 
 export default function Hero() {
   return (
@@ -46,11 +46,11 @@ export default function Hero() {
 
         {/* Carousel Dots */}
         <div className="flex justify-center space-x-3 mt-16">
-          <div className="w-2 h-2 rounded-full bg-white/50"></div>
-          <div className="w-2 h-2 rounded-full bg-white"></div>
-          <div className="w-2 h-2 rounded-full bg-white/50"></div>
-          <div className="w-2 h-2 rounded-full bg-white/50"></div>
-          <div className="w-2 h-2 rounded-full bg-white/50"></div>
+          <div className="w-2 h-2 rounded-full bg-silver/60"></div>
+          <div className="w-2 h-2 rounded-full bg-silver/60"></div>
+          <div className="w-2 h-2 rounded-full bg-silver"></div>
+          <div className="w-2 h-2 rounded-full bg-silver/60"></div>
+          <div className="w-2 h-2 rounded-full bg-silver/60"></div>
         </div>
       </div>
     </section>
