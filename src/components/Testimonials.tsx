@@ -54,7 +54,7 @@ export default function Testimonials() {
 
           {/* Fade Overlay & Scroll Button */}
           <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-[#0f171a] via-[#0f171a]/90 to-transparent flex items-end justify-center z-10 pointer-events-none">
-            <button className="w-14 h-8 mb-6 bg-gradient-to-b from-[#38A3A5] to-[#22577A] rounded-2xl flex items-center justify-center hover:opacity-80 transition-opacity shadow-[0_4px_14px_rgba(0,0,0,0.5)] pointer-events-auto">
+            <button className="w-14 h-8 mb-6 bg-gradient-to-b from-[#3AA3A6] to-[#000000] rounded-2xl flex items-center justify-center hover:opacity-80 transition-opacity shadow-[0_4px_14px_rgba(0,0,0,0.5)] pointer-events-auto">
               <ChevronDown className="text-white w-5 h-5" />
             </button>
           </div>

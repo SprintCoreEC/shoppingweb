@@ -1,9 +1,12 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Catalog from './components/Catalog';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
+// App.tsx
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Catalog from "./components/Catalog";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+// Importamos la imagen decorativa aquí
+import bgContactSection from "./assets/bg-contact-section.svg"; 
 
 export default function App() {
   return (
@@ -13,6 +16,7 @@ export default function App() {
         <Hero />
         <About />
         <Catalog />
+        
         <Testimonials />
         <Contact />
       </main>
