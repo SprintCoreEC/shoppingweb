@@ -35,42 +35,49 @@ export default function Testimonials() {
         <div className="relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-8">
             {testimonials.map((t) => (
-              <div
-                key={t.id}
-                className="flex gap-4 sm:gap-6 lg:gap-8 items-start"
-              >
-                <div
-                  className={`w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 rounded-2xl sm:rounded-3xl shrink-0 flex items-center justify-center p-3 sm:p-5 lg:p-6 ${t.active ? "border border-[#38A3A5] bg-white/0" : "bg-white/10"}`}
-                >
-                  <img
-                    src={aboutusimg}
-                    alt="Product"
-                    className="w-full h-full object-contain mix-blend-luminosity opacity-80"
-                  />
-                </div>
-                <div className="pt-2">
-                  <div className="text-5xl font-bold text-gray-300 mb-3">
-                    {t.id}
+              <div key={t.id} className="flex flex-col gap-4">
+                {/* Fila superior: imagen + id/h3/estrellas (ambos breakpoints) */}
+                <div className="flex gap-4 sm:gap-6 lg:gap-8 items-start">
+                  <div
+                    className={`w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 rounded-2xl sm:rounded-3xl shrink-0 flex items-center justify-center p-3 sm:p-5 lg:p-6 ${t.active ? "border border-[#38A3A5] bg-white/0" : "bg-white/10"}`}
+                  >
+                    <img
+                      src={aboutusimg}
+                      alt="Product"
+                      className="w-full h-full object-contain mix-blend-luminosity opacity-80"
+                    />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4 leading-tight">
-                    FEAR OF GOD
-                    <br />
-                    ESSENTIALS
-                  </h3>
-                  <div className="flex gap-1 mb-5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-5 h-5 fill-[#38A3A5] text-[#38A3A5]"
-                      />
-                    ))}
+                  <div className="pt-2 flex-1">
+                    <div className="text-3xl sm:text-5xl font-bold text-gray-300 mb-2 sm:mb-3">
+                      {t.id}
+                    </div>
+                    <h3 className="text-base sm:text-xl font-bold text-white mb-3 sm:mb-4 leading-tight">
+                      FEAR OF GOD
+                      <br />
+                      ESSENTIALS
+                    </h3>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="w-4 h-4 sm:w-5 sm:h-5 fill-[#38A3A5] text-[#38A3A5]"
+                        />
+                      ))}
+                    </div>
+                    {/* Descripción solo en desktop (dentro de la fila) */}
+                    <p className="hidden lg:block text-gray-400 text-sm leading-relaxed max-w-xs mt-5">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s.
+                    </p>
                   </div>
-                  <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s.
-                  </p>
                 </div>
+                {/* Descripción debajo de imagen+texto en mobile/tablet */}
+                <p className="lg:hidden text-gray-400 text-sm leading-relaxed">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
               </div>
             ))}
           </div>
