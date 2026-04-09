@@ -1,7 +1,7 @@
 import { Phone, Mail, Facebook, Instagram, Twitter } from "lucide-react";
 import bgContact1 from "../assets/bg-contact-1.svg";
 import bgContactCircle from "../assets/bg-contact-circule.svg";
-import bgContactProduct from "../assets/bg-contact-product.png";
+import bgContact from "../assets/bg-contact.png";
 
 export default function Contact() {
   return (
@@ -10,13 +10,13 @@ export default function Contact() {
       className="relative py-32 overflow-hidden bg-[#0a0a0a]"
     >
       <div className="absolute inset-0 z-0">
-        {/* Top bridge: hides hard seam with previous section */}
-        <div className="absolute top-0 inset-x-0 h-36 md:h-44 z-40 bg-linear-to-b from-[#0f171a] via-[#0a0a0a]/90 to-transparent" />
+        {/* Top bridge: smooth transition from Testimonials */}
+        <div className="absolute -top-48 inset-x-0 h-80 md:h-[500px] z-40 pointer-events-none bg-gradient-to-b from-[#0f171a] via-black/70 to-transparent" />{" "}
         {/* Photo base */}
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `url(${bgContactProduct})`,
+            backgroundImage: `url(${bgContact})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -26,21 +26,17 @@ export default function Contact() {
           src={bgContact1}
           alt=""
           aria-hidden="true"
-          className="absolute -left-10 -top-8 h-full w-auto scale-125 origin-top-left z-30"
+          className="absolute -left-0 top-30 h-auto w-auto scale-100 origin-top-left z-40"
         />
         {/* Right: blurred teal glow circle */}
-        <img
-          src={bgContactCircle}
-          alt=""
-          aria-hidden="true"
-          className="absolute right-[-8rem] top-[-20rem] z-30 h-[170%] w-auto max-w-none md:right-[-15rem] md:top-[-50rem] md:h-[230%] "
-        />
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <div className="text-[#38A3A5] tracking-[0.3em] text-xs font-bold mb-4">
-          G E T &nbsp; I N &nbsp; T O U C H
+        <div className="tracking-[0.3em] text-xs font-bold mb-4">
+          <span className="text-white">G E T</span>
+          <span className="text-white">&nbsp; I N &nbsp;</span>
+          <span className="text-[#38A3A5]">T O U C H</span>
         </div>
         <h2 className="text-5xl md:text-6xl font-bold text-white mb-20">
           Contáctanos
