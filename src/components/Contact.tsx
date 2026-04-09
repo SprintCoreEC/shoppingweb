@@ -11,7 +11,7 @@ export default function Contact() {
     >
       <div className="absolute inset-0 z-0">
         {/* Top bridge: smooth transition from Testimonials */}
-        <div className="absolute -top-48 inset-x-0 h-80 md:h-[500px] z-40 pointer-events-none bg-gradient-to-b from-[#0f171a] via-black/70 to-transparent" />{" "}
+        <div className="absolute -top-0 inset-x-0 h-80 md:h-[500px] z-40 pointer-events-none bg-gradient-to-b from-[#0f171a] via-black/70 to-transparent" />{" "}
         {/* Photo base */}
         <div
           className="absolute inset-0"
