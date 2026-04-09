@@ -33,11 +33,14 @@ export default function Testimonials() {
         </div>
 
         <div className="relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-8">
             {testimonials.map((t) => (
-              <div key={t.id} className="flex gap-8 items-start">
+              <div
+                key={t.id}
+                className="flex gap-4 sm:gap-6 lg:gap-8 items-start"
+              >
                 <div
-                  className={`w-60 h-60 rounded-3xl shrink-0 flex items-center justify-center p-5 ${t.active ? "border border-[#38A3A5] bg-white/5" : "bg-white/10"}`}
+                  className={`w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 rounded-2xl sm:rounded-3xl shrink-0 flex items-center justify-center p-3 sm:p-5 lg:p-6 ${t.active ? "border border-[#38A3A5] bg-white/0" : "bg-white/10"}`}
                 >
                   <img
                     src={aboutusimg}
