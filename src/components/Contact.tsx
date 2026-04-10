@@ -1,6 +1,5 @@
 import { Phone, Mail, Facebook, Instagram, Twitter } from "lucide-react";
 import bgContact1 from "../assets/bg-contact-1.svg";
-import bgContactCircle from "../assets/bg-contact-circule.svg";
 import bgContact from "../assets/bg-contact.png";
 
 export default function Contact() {
@@ -11,7 +10,7 @@ export default function Contact() {
     >
       <div className="absolute inset-0 z-0">
         {/* Top bridge: smooth transition from Testimonials */}
-        <div className="absolute -top-0 inset-x-0 h-80 md:h-[500px] z-40 pointer-events-none bg-gradient-to-b from-[#0f171a] via-black/70 to-transparent" />{" "}
+        <div className="absolute -top-0 inset-x-0 h-50 md:h-[500px] z-40 pointer-events-none bg-gradient-to-b from-[#0f171a] via-black/70 to-transparent" />{" "}
         {/* Photo base */}
         <div
           className="absolute inset-0"
@@ -26,7 +25,7 @@ export default function Contact() {
           src={bgContact1}
           alt=""
           aria-hidden="true"
-          className="absolute -left-0 top-30 h-auto w-auto scale-100 origin-top-left z-40"
+          className="absolute -left-0 top-30 h-auto w-auto  scale-75 md:scale-100 origin-top-left z-40"
         />
         {/* Right: blurred teal glow circle */}
         <div className="absolute inset-0 bg-black/20" />
