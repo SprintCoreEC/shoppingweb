@@ -11,3 +11,27 @@
   --color-dark: #161616;
   --color-teal: #3AA3A6;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #111111;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

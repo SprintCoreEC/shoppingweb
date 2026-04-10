@@ -34,14 +34,22 @@ export default function Hero() {
           scrambled it to make a type specimen book.
         </p>
         <button
-          className="text-gray font-semibold px-10 py-4 rounded-full tracking-widest text-sm flex items-center mx-auto gap-10 hover:opacity-90 transition-opacity backdrop-blur-sm"
+          className="group text-gray font-semibold px-10 py-4 rounded-full tracking-widest text-sm 
+  flex items-center mx-auto gap-6 backdrop-blur-sm
+  transition-colors duration-300"
           style={{
             background:
               "linear-gradient(to right, color-mix(in srgb, #161616 35%, transparent), #3AA3A6)",
           }}
         >
-          <span>C O N O C E R &nbsp; M Á S</span>
-          <HiPlus size={14} color="#B2B2B2" />
+          <span className="transition-colors duration-300 group-hover:text-white">
+            C O N O C E R &nbsp; M Á S
+          </span>
+
+          <HiPlus
+            size={14}
+            className="text-gray transition-colors duration-300 group-hover:text-white"
+          />
         </button>
 
         {/* Carousel Dots */}
