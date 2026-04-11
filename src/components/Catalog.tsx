@@ -319,21 +319,15 @@ export default function Catalog() {
         </div>
 
         {/* Footer text */}
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-x-3 gap-y-3 text-center text-[10px] font-bold sm:text-[16px] lg:mt-24">
-          <span className="tracking-[0.35em] text-dark sm:tracking-[0.5em]">
-            S T A N D S
+        <div className="mt-16 flex flex-wrap items-center justify-center gap-x-3 gap-y-3 text-center text-[10px] font-bold sm:text-[16px] lg:mt-24 tracking-[0.35em] sm:tracking-[0.5em]">
+          <span className="text-dark">
+            E X P L O R A
           </span>
-          <span className="text-verdigris sm:tracking-[0.5em]">
-            &nbsp;O U T
+          <span className="text-verdigris">
+            &nbsp;N U E S T RO
           </span>
-          <span className="tracking-[0.35em] text-dark sm:tracking-[0.5em]">
-            &nbsp;W I T H
-          </span>
-          <span className="tracking-[0.35em] text-dark sm:tracking-[0.5em]">
-            &nbsp;O U R
-          </span>
-          <span className="tracking-[0.35em] text-verdigris sm:tracking-[0.5em]">
-            &nbsp;S T Y L E
+          <span className="text-dark">
+            &nbsp;C A T A L O G O
           </span>
         </div>
       </div>

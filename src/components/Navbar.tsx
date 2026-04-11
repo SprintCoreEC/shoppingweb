@@ -65,8 +65,8 @@ export default function Navbar() {
   const linkClasses = (href: string) =>
     `transition-colors duration-200 ${
       activeSection === href
-        ? "text-[#38A3A5] font-semibold"
-        : "text-gray hover:text-white"
+        ? "text-verdigris font-semibold"
+        : "text-white/90 hover:text-white"
     }`;
 
   return (
@@ -74,8 +74,8 @@ export default function Navbar() {
       className={`fixed w-full z-50 py-6 transition-all duration-300 ${isScrolled ? "bg-[#0a0a0a]/30 backdrop-blur-xl shadow-lg" : "bg-transparent"}`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between mb-2">
-        <div className="text-gray font-bold tracking-[0.3em] text-sm">
-          A M E R I C A N &nbsp; S H O P
+        <div className="text-white/90 font-bold tracking-[0.3em] text-sm">
+          P R I M E &nbsp; S H E L L &nbsp; S T O R E
         </div>
 
         <div className="hidden md:flex items-center space-x-8 text-sm">
@@ -133,7 +133,7 @@ export default function Navbar() {
                 href={href}
                 className={`block rounded-xl px-4 py-3 transition duration-300 ${
                   activeSection === href
-                    ? "bg-[#0a0a0a]/70 text-[#38A3A5]"
+                    ? "bg-[#0a0a0a]/70 text-verdigris"
                     : "text-white/90 hover:bg-white/10 hover:text-white"
                 }`}
                 onClick={() => setIsMenuOpen(false)}

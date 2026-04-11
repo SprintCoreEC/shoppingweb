@@ -3,12 +3,42 @@ import aboutusimg from "../assets/aboutusimage1.png";
 
 export default function Testimonials() {
   const testimonials = [
-    { id: 1, active: false },
-    { id: 2, active: true },
-    { id: 3, active: true },
-    { id: 4, active: false },
-    { id: 5, active: false },
-    { id: 6, active: false },
+    {
+      id: 1,
+      active: false,
+      name: "Cliente",
+      text: "Pedí unas zapatillas y todo llegó bien. La atención fue rápida y clara.",
+    },
+    {
+      id: 2,
+      active: true,
+      name: "Cliente",
+      text: "Buena calidad en los productos. Me ayudaron por WhatsApp y todo fue sencillo.",
+    },
+    {
+      id: 3,
+      active: true,
+      name: "Cliente",
+      text: "Compré un reloj y me gustó bastante. Tal cual como en las fotos.",
+    },
+    {
+      id: 4,
+      active: false,
+      name: "Cliente",
+      text: "Me respondieron rápido y me dieron toda la info antes de comprar.",
+    },
+    {
+      id: 5,
+      active: false,
+      name: "Cliente",
+      text: "Buen servicio, el envío fue sin problemas y el producto llegó en buen estado.",
+    },
+    {
+      id: 6,
+      active: false,
+      name: "Cliente",
+      text: "Todo correcto con mi compra, volvería a pedir sin problema.",
+    },
   ];
 
   return (
@@ -17,18 +47,23 @@ export default function Testimonials() {
       className="bg-[#0f171a] relative overflow-hidden pt-20"
     >
       {/* Radial Gradient Background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#38A3A5]/20 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-verdigris/20 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <div className=" tracking-[0.3em] text-xs font-bold mb-4">
-            <span className="text-[#38A3A5]"> C U S T O M E R S</span>
-            <span className="text-white">&nbsp; W H O &nbsp;</span>
-            <span className="text-[#38A3A5]">T R U S T</span>
-            <span className="text-white">&nbsp; U S</span>
+          <div className="tracking-[0.35em] sm:tracking-[0.5em] mb-16 flex flex-wrap items-center justify-center gap-x-3 gap-y-3 text-center text-[10px] font-bold sm:text-[16px] lg:mt-24">
+            <span className="text-verdigris whitespace-nowrap">
+              N U E S T R O S
+            </span>
+            <span className="text-white whitespace-nowrap">
+              &nbsp;C L I E N T E S
+            </span>
+            <span className="text-verdigris whitespace-nowrap">
+              &nbsp;O P I N A N
+            </span>
           </div>
           <h2 className="text-5xl font-bold text-white flex items-center justify-center gap-4">
-            <span className="text-[#38A3A5]">03</span> Testimonios
+            <span className="text-verdigris">03</span> Testimonios
           </h2>
         </div>
 
@@ -36,14 +71,17 @@ export default function Testimonials() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-8">
             {testimonials.map((t) => (
               <div key={t.id} className="flex flex-col gap-4">
-                {/* Fila superior: imagen + id/h3/estrellas (ambos breakpoints) */}
                 <div className="flex gap-4 sm:gap-6 lg:gap-8 items-start">
                   <div
-                    className={`w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 rounded-2xl sm:rounded-3xl shrink-0 flex items-center justify-center p-3 sm:p-5 lg:p-6 ${t.active ? "border border-[#38A3A5] bg-white/0" : "bg-white/10"}`}
+                    className={`w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 rounded-2xl sm:rounded-3xl shrink-0 flex items-center justify-center p-3 sm:p-5 lg:p-6 ${
+                      t.active
+                        ? "border border-verdigris bg-white/0"
+                        : "bg-white/10"
+                    }`}
                   >
                     <img
                       src={aboutusimg}
-                      alt="Product"
+                      alt="Producto"
                       className="w-full h-full object-contain mix-blend-luminosity opacity-80"
                     />
                   </div>
@@ -52,31 +90,27 @@ export default function Testimonials() {
                       {t.id}
                     </div>
                     <h3 className="text-base sm:text-xl font-bold text-white mb-3 sm:mb-4 leading-tight">
-                      FEAR OF GOD
-                      <br />
-                      ESSENTIALS
+                      Cliente verificado
                     </h3>
                     <div className="flex gap-1">
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className="w-4 h-4 sm:w-5 sm:h-5 fill-[#38A3A5] text-[#38A3A5]"
+                          className="w-4 h-4 sm:w-5 sm:h-5 fill-verdigris text-verdigris"
                         />
                       ))}
                     </div>
-                    {/* Descripción solo en desktop (dentro de la fila) */}
+
+                    {/* Desktop */}
                     <p className="hidden lg:block text-gray-400 text-sm leading-relaxed max-w-xs mt-5">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
+                      {t.text}
                     </p>
                   </div>
                 </div>
-                {/* Descripción debajo de imagen+texto en mobile/tablet */}
+
+                {/* Mobile */}
                 <p className="lg:hidden text-gray-400 text-sm leading-relaxed">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
+                  {t.text}
                 </p>
               </div>
             ))}

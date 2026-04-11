@@ -32,14 +32,14 @@ export default function About() {
             </div>
 
             <p className="mx-auto mt-6 max-w-none text-center text-sm leading-relaxed text-gray-400 sm:text-[15px] lg:mx-0 lg:mt-8 lg:max-w-2xl lg:text-left">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard dummy text ever since the
-              1500s, when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book.
+              Somos una tienda online dedicada a ofrecer una selección variada
+              de artículos como ropa, zapatillas, perfumes, relojes, mochilas,
+              gorras y más. Nuestro objetivo es brindarte opciones con estilo,
+              buena presentación y atención cercana, para que encuentres
+              productos que se adapten a tu gusto y necesidad. Este espacio está
+              pensado para que explores nuestro catálogo de forma rápida y
+              sencilla, y puedas contactarnos directamente para recibir atención
+              personalizada.
             </p>
           </div>
 
@@ -63,14 +63,13 @@ export default function About() {
           {/* Mobile block 1 */}
           <div className="order-3 flex flex-col items-center text-center lg:hidden">
             <h3 className="mb-3 text-3xl font-semibold leading-none text-silver">
-              Word word word
+              Variedad que conecta contigo
             </h3>
 
             <p className="mb-8 max-w-[320px] text-sm leading-snug text-gray-400">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Reunimos diferentes categorías en un solo lugar para que puedas
+              descubrir artículos modernos, útiles y con personalidad, siempre
+              con una atención directa y confiable.
             </p>
 
             <div className="w-full max-w-65 rounded-[1.75rem] border-[1.5px] border-verdigris px-8 py-10 text-center">
@@ -100,14 +99,13 @@ export default function About() {
             {/* Mobile */}
             <div className="flex flex-col items-center text-center lg:hidden">
               <h3 className="mb-3 text-3xl font-semibold leading-none text-silver">
-                Word word word
+                Atención simple y directa
               </h3>
 
               <p className="mb-8 max-w-[320px] text-sm leading-snug text-gray-400">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                Nuestra web es informativa y está diseñada para que puedas ver
+                los productos y conocer mejor la tienda. La atención y
+                coordinación de compra se realiza de forma directa.
               </p>
 
               <div className="w-full max-w-65 rounded-[1.75rem] border-[1.5px] border-verdigris px-8 py-10 text-center">
@@ -126,15 +124,13 @@ export default function About() {
               {/* Card 1 */}
               <div>
                 <h3 className="mb-3 text-3xl font-semibold leading-none text-silver md:text-4xl">
-                  Word word word
+                  Variedad que conecta contigo
                 </h3>
 
                 <p className="mb-8 max-w-[320px] text-sm leading-snug text-gray-400">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Reunimos diferentes categorías en un solo lugar para que
+                  puedas descubrir artículos modernos, útiles y con
+                  personalidad, siempre con una atención directa y confiable.
                 </p>
 
                 <div className="w-full max-w-65 rounded-[1.75rem] border-[1.5px] border-verdigris px-8 py-10 text-center">
@@ -151,15 +147,14 @@ export default function About() {
               {/* Card 2 */}
               <div>
                 <h3 className="mb-3 text-3xl font-semibold leading-none text-silver md:text-4xl">
-                  Word word word
+                  Atención simple y directa
                 </h3>
 
                 <p className="mb-8 max-w-[320px] text-sm leading-snug text-gray-400">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  Esta web funciona como una vitrina informativa para que
+                  conozcas nuestros artículos. La compra se concreta mediante
+                  contacto directo, haciendo la experiencia más cercana, rápida
+                  y personalizada.
                 </p>
 
                 <div className="w-full max-w-65 rounded-[1.75rem] border-[1.5px] border-verdigris px-8 py-10 text-center">

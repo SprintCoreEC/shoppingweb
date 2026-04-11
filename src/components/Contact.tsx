@@ -33,9 +33,9 @@ export default function Contact() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="tracking-[0.3em] text-xs font-bold mb-4">
-          <span className="text-white">G E T</span>
-          <span className="text-white">&nbsp; I N &nbsp;</span>
-          <span className="text-[#38A3A5]">T O U C H</span>
+          <span className="text-white">C O N T A C T A</span>
+          <span className="text-white">&nbsp; C O N &nbsp;</span>
+          <span className="text-verdigris">N O S O T R O S</span>
         </div>
         <h2 className="text-5xl md:text-6xl font-bold text-white mb-20">
           Contáctanos
@@ -43,49 +43,50 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
           <div className="flex flex-col items-center">
-            <Phone className="w-6 h-6 text-[#38A3A5] mb-4" />
-            <h3 className="text-2xl font-semibold text-white mb-2">Teléfono</h3>
-            <p className="text-gray-400">(+593) 999 999 9999</p>
+            <Phone className="w-6 h-6 text-verdigris mb-4" />
+            <h3 className="text-2xl font-semibold text-white mb-2">WhatsApp</h3>
+            <p className="text-gray-400">+593 960171890</p>
           </div>
           <div className="flex flex-col items-center">
-            <Mail className="w-6 h-6 text-[#38A3A5] mb-4" />
-            <h3 className="text-2xl font-semibold text-white mb-2">Correo</h3>
-            <p className="text-gray-400">info@americanshop.com</p>
+            <Mail className="w-6 h-6 text-verdigris mb-4" />
+            <h3 className="text-2xl font-semibold text-white mb-2">Ubicación</h3>
+            <p className="text-gray-400">Shell-Mera, Pastaza, Ecuador</p>
           </div>
         </div>
 
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-white mb-8">Síguenos</h3>
+          <h3 className="text-2xl font-semibold text-white mb-8">Información adicional</h3>
           <div className="flex justify-center gap-8">
             <a
               href="#"
-              className="text-[#38A3A5] hover:text-white transition-colors"
+              className="text-verdigris hover:text-white transition-colors"
             >
               <Facebook className="w-5 h-5" />
             </a>
             <a
               href="#"
-              className="text-[#38A3A5] hover:text-white transition-colors"
+              className="text-verdigris hover:text-white transition-colors"
             >
               <Instagram className="w-5 h-5" />
             </a>
             <a
               href="#"
-              className="text-[#38A3A5] hover:text-white transition-colors"
+              className="text-verdigris hover:text-white transition-colors"
             >
               <Twitter className="w-5 h-5" />
             </a>
-            {/* TikTok Icon placeholder using a generic icon or text */}
             <a
               href="#"
-              className="text-[#38A3A5] hover:text-white transition-colors font-bold text-lg leading-none"
+              className="text-verdigris hover:text-white transition-colors font-bold text-lg leading-none"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                 <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
               </svg>
             </a>
           </div>
-          <p className="text-gray-400 text-sm mt-6">@CoffeShop</p>
+          <p className="text-gray-400 text-sm mt-6">
+            Realizamos envíos a todo el Ecuador por Servientrega.
+          </p>
         </div>
       </div>
 

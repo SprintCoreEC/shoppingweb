@@ -18,23 +18,24 @@ export default function Hero() {
       ></div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
-        <h1 className="text-6xl md:text-8xl font-bold text-gray mb-4 tracking-tight">
-          American
+        <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tight">
+          Prime Shell
           <br />
-          Shop
+          Store EC
         </h1>
-        <h2 className="text-2xl md:text-4xl font-semibold text-gray mb-6">
-          Productos americanos
-          <br />a un paso de ti
+        <h2 className="text-2xl md:text-4xl font-semibold text-white/90 mb-6">
+          Estilo, variedad y tendencia
+          <br />
+          en un solo lugar
         </h2>
-        <p className="text-gray text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+        <p className="text-white/90 text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
+          Descubre una selección de productos como ropa, zapatillas, perfumes,
+          relojes y más. Explora nuestro catálogo y encuentra lo que buscas de
+          forma rápida. Contáctanos directamente para recibir atención
+          personalizada y concretar tu compra de manera sencilla.
         </p>
         <button
-          className="group text-gray font-semibold px-10 py-4 rounded-full tracking-widest text-sm 
+          className="group text-white/90 font-semibold px-10 py-4 rounded-full tracking-widest text-sm 
   flex items-center mx-auto gap-6 backdrop-blur-sm
   transition-colors duration-300"
           style={{
@@ -43,12 +44,12 @@ export default function Hero() {
           }}
         >
           <span className="transition-colors duration-300 group-hover:text-white">
-            C O N O C E R &nbsp; M Á S
+            V E R &nbsp; C A T Á L O G O
           </span>
 
           <HiPlus
             size={14}
-            className="text-gray transition-colors duration-300 group-hover:text-white"
+            className="text-white/90 transition-colors duration-300 group-hover:text-white"
           />
         </button>
 
